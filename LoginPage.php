@@ -5,7 +5,7 @@
     </head>
     <body>
         <h2>Авторизация</h2>
-        <form>
+        <form method="POST" action="#">
             Логин <input type="text"><br><br>
             Пароль <input type="text"><br><br>
             <input type="submit" value="Войти">
