@@ -4,7 +4,7 @@
         <title>Авторизация</title>
     </head>
     <body>
-        <h2>Авторизация</h2>
+        <h2>Вход</h2>
         
         <form method="POST" action="#" autocomplete="off">
             Логин <input name="loginA" type="text"><br><br>
@@ -28,7 +28,7 @@
                         if($password==$user['userPassword']){
                             echo "вы успешно вошли ".$user['userName'];
                         }
-                        else echo "ошибка";
+                        else echo "Ошибка";
                     }
                     else echo "такого пользователя нет";
                 }catch(PDOException $e){
