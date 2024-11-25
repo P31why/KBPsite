@@ -21,7 +21,10 @@
                     $query->execute([$login]);
                     $user=$query->fetch(PDO::FETCH_ASSOC);
                     if($user){
-                        echo "вы успешно вошли";
+                        if($password==$user['userPassword']){
+                            echo "вы успешно вошли";
+                        }
+                        else echo "ошибка";
                     }
                     else echo "такого пользователя нет";
                 }catch(PDOException $e){
