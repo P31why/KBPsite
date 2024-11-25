@@ -11,7 +11,7 @@
             <input type="submit" value="Зарегестрироватиься">
         </form>
         <br>
-            <a href="LoginPage.php">Зарегестрироваться</a>
+            <a href="LoginPage.php">Войти</a>
         </br>
         <?php
             if($_SERVER['REQUEST_METHOD']=='POST'){

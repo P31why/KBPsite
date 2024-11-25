@@ -12,7 +12,7 @@
             <input type="submit" value="Войти">
         </form>
         <br>
-            <a href="RegistrationPage.php">Войти</a>
+            <a href="RegistrationPage.php">Зарегестрироваться</a>
         </br>
         <?php
         if($_SERVER['REQUEST_METHOD']=='POST'){
