@@ -26,7 +26,7 @@
                     $user=$query->fetch(PDO::FETCH_ASSOC);
                     if($user){
                         if($password==$user['userPassword']){
-                            echo "вы успешно вошли";
+                            echo "вы успешно вошли ".$user['userName'];
                         }
                         else echo "ошибка";
                     }

@@ -22,7 +22,7 @@
                         $password=$_POST['passwordR'];
                         $query="INSERT INTO UsersKBP (userName,userPassword)VALUES('$name','$password')";
                         $connection->exec($query);
-                        echo "Вы успешно зарегестрировались!!!".$user['userName'];
+                        echo "Вы успешно зарегестрировались!!!";
                     }catch(PDOException $e){
                         echo $e->getMessage();
                     }
