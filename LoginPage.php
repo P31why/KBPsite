@@ -5,11 +5,15 @@
     </head>
     <body>
         <h2>Авторизация</h2>
+        
         <form method="POST" action="#" autocomplete="off">
             Логин <input name="loginA" type="text"><br><br>
             Пароль <input name="passwordA" type="text"><br><br>
             <input type="submit" value="Войти">
         </form>
+        <br>
+            <a href="RegistrationPage.php">Войти</a>
+        </br>
         <?php
         if($_SERVER['REQUEST_METHOD']=='POST'){
             if(!empty($_POST['loginA']) && !empty($_POST['passwordA'])){

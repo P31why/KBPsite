@@ -10,6 +10,9 @@
             Пароль <input name="passwordR" type="text"><br><br>
             <input type="submit" value="Зарегестрироватиься">
         </form>
+        <br>
+            <a href="RegistrationPage.php">Зарегестрироваться</a>
+        </br>
         <?php
             if($_SERVER['REQUEST_METHOD']=='POST'){
                 if(isset($_POST['loginR']) && isset($_POST['passwordR'])){
