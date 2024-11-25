@@ -11,7 +11,7 @@
             <input type="submit" value="Зарегестрироватиься">
         </form>
         <br>
-            <a href="RegistrationPage.php">Зарегестрироваться</a>
+            <a href="LoginPage.php">Зарегестрироваться</a>
         </br>
         <?php
             if($_SERVER['REQUEST_METHOD']=='POST'){
@@ -22,7 +22,7 @@
                         $password=$_POST['passwordR'];
                         $query="INSERT INTO UsersKBP (userName,userPassword)VALUES('$name','$password')";
                         $connection->exec($query);
-                        echo "Вы успешно зарегестрировались!!!";
+                        echo "Вы успешно зарегестрировались!!!".$user['userName'];
                     }catch(PDOException $e){
                         echo $e->getMessage();
                     }
