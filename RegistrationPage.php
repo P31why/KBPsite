@@ -19,9 +19,9 @@
                     try{
                         $connection=new PDO ("mysql:host=127.127.126.25;port=3306;dbname=UsersSite","root","");
                         $name=$_POST['loginR'];
-                        strip_tags($name);
+                        $name=strip_tags($name);
                         $password=$_POST['passwordR'];
-                        strip_tags($password);
+                        $password=strip_tags($password);
                         $query="INSERT INTO UsersKBP (userName,userPassword)VALUES('$name','$password')";
                         $connection->exec($query);
                         echo "Вы успешно зарегестрировались!!!";
